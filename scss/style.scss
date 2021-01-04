@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+@import "base/colors";
+@import "base/fonts";
+@import "components/navbar";
+@import "components/header";
+@import "components/about";
+@import "components/houses";
+@import "components/nature";
+@import "components/sports";
+@import "components/contact";
+@import "components/footer";
+@import "extensions/extend";
+@import "extensions/mixins";

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#navbar-container {
+  background: linear-gradient(320deg, #317873 41%, black 88%); }
+
+#navbar-icon {
+  width: 35px;
+  height: auto;
+  background-color: white;
+  border-radius: 20%;
+  border: 1px solid #DADD98; }
+
+#anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar, #anchor-4-navbar, #anchor-5-navbar {
+  color: white; }
+  #anchor-1-navbar:hover, #anchor-2-navbar:hover, #anchor-3-navbar:hover, #anchor-4-navbar:hover, #anchor-5-navbar:hover {
+    border-left: 1px solid white;
+    color: #DADD98;
+    padding-left: 5%; }
+
+@media screen and (min-width: 769px) {
+  #navbar-icon {
+    margin-right: 5%; }
+  #anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar, #anchor-4-navbar, #anchor-5-navbar {
+    margin-left: 5%; }
+    #anchor-1-navbar:hover, #anchor-2-navbar:hover, #anchor-3-navbar:hover, #anchor-4-navbar:hover, #anchor-5-navbar:hover {
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      border-left: 0; } }
+
+#header-container {
+  margin-top: 8vh;
+  background-image: url("../../images/background-header.jpg");
+  height: 65vh;
+  width: 100vw;
+  background-position: center; }
+
+#header-sub-container {
+  text-align: center;
+  background-color: rgba(49, 120, 115, 0.5);
+  height: 40vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 3%; }
+
+#header-h1 {
+  letter-spacing: 1vw;
+  word-spacing: 1vw;
+  font-size: 30px;
+  padding-top: 1vh; }
+
+#header-h2 {
+  letter-spacing: 0.5vw;
+  word-spacing: 0.3vw;
+  font-size: 20px;
+  padding: 4vh; }
+
+#header-h3 {
+  letter-spacing: 0.5vw;
+  word-spacing: 0.2vw;
+  font-size: 18px; }
+
+@media screen and (max-width: 769px) {
+  #header-sub-container {
+    height: 40vh;
+    padding-top: 20%; } }
+
+#about {
+  background: #90EE90; }
+
+#houses {
+  background-color: #66CDAA; }
+
+#nature {
+  background-color: #00FA9A; }
+
+#sports {
+  background-color: #008B8B; }
+
+#contact {
+  background-color: #006A4E; }
+
+#footer {
+  background-color: #014421; }
+
+#about, #houses, #nature, #sports, #contact {
+  height: 500px;
+  width: auto; }

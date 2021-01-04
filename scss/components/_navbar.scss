@@ -1,0 +1,37 @@
+#navbar-container {
+    background: linear-gradient(320deg, $color-1 41%, rgba(0,0,0,1) 88%);
+}
+
+#navbar-icon {
+    width: 35px;
+    height: auto;
+    background-color: white;
+    border-radius: 20%;
+    border: 1px solid $color-8;
+}
+
+#anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar,#anchor-4-navbar,#anchor-5-navbar {
+    color: white;
+    &:hover {
+        border-left: 1px solid white;
+        color: $color-8;
+        padding-left: 5%;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    #navbar-icon{
+        margin-right: 5%;
+    }
+    #anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar,#anchor-4-navbar,#anchor-5-navbar {
+        margin-left: 5%;
+        &:hover {
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        border-left: 0;
+        }
+    } 
+}
+
+

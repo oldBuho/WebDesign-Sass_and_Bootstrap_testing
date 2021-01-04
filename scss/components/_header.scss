@@ -1,0 +1,44 @@
+#header-container {
+    margin-top: 8vh;
+    background-image: url('../../images/background-header.jpg');
+    height: 65vh;
+    width: 100vw;
+    background-position: center;
+}
+    
+#header-sub-container {
+    text-align: center;
+    background-color: rgba(49, 120, 115, 0.5);
+    height: 40vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 3%;
+}
+
+#header-h1 {
+    letter-spacing: 1vw;
+    word-spacing: 1vw;
+    font-size: 30px;
+    padding-top: 1vh;
+}
+
+#header-h2 {
+    letter-spacing: 0.5vw;
+    word-spacing: 0.3vw;
+    font-size: 20px;
+    padding: 4vh;
+}
+
+#header-h3 {
+    letter-spacing: 0.5vw;
+    word-spacing: 0.2vw;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 769px) {
+    #header-sub-container {
+        height: 40vh;
+        padding-top: 20%;
+    }
+}
