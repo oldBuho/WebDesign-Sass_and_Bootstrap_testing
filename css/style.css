@@ -3,8 +3,23 @@
   padding: 0;
   box-sizing: border-box; }
 
+#about .section-title {
+  color: black;
+  font-size: 21px;
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: bold; }
+
+#about-text {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
 #navbar-container {
-  background: linear-gradient(320deg, #317873 41%, black 88%); }
+  background: linear-gradient(320deg, #317873 41%, black 88%);
+  z-index: 1;
+  top: 0;
+  transform: translate(0px, 0px);
+  transition: all ease-out 1s; }
 
 #navbar-icon {
   width: 35px;
@@ -31,45 +46,72 @@
       border-left: 0; } }
 
 #header-container {
-  margin-top: 8vh;
-  background-image: url("../../images/background-header.jpg");
-  height: 65vh;
+  margin-top: 4vh;
+  background-image: url("../images/background-header.jpg");
+  height: 96vh;
   width: 100vw;
   background-position: center; }
 
 #header-sub-container {
   text-align: center;
   background-color: rgba(49, 120, 115, 0.5);
-  height: 40vh;
+  height: 60vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: white;
-  padding-top: 3%; }
+  padding-top: 10%; }
 
 #header-h1 {
   letter-spacing: 1vw;
   word-spacing: 1vw;
-  font-size: 30px;
+  font-size: 35px;
   padding-top: 1vh; }
 
 #header-h2 {
   letter-spacing: 0.5vw;
   word-spacing: 0.3vw;
-  font-size: 20px;
+  font-size: 25px;
   padding: 4vh; }
 
 #header-h3 {
   letter-spacing: 0.5vw;
   word-spacing: 0.2vw;
-  font-size: 18px; }
+  font-size: 22px; }
 
 @media screen and (max-width: 769px) {
   #header-sub-container {
-    height: 40vh;
+    height: 50vh;
     padding-top: 20%; } }
 
 #about {
-  background: #90EE90; }
+  background-color: #F5F5F5;
+  height: 100vh;
+  padding: 25vh 0 0 5vw; }
+
+#about .section-title {
+  padding-bottom: 3vh; }
+
+#about-img {
+  border-top: 10px solid #dff7cb;
+  border-left: 10px solid #dff7cb; }
+
+#about-text {
+  background-color: #dff7cb;
+  width: 40vw;
+  padding: 2%;
+  border-radius: 2%; }
+
+@media screen and (max-width: 769px) {
+  #about {
+    padding: 5vh 0 110vh 0; }
+  #about-img-contaner {
+    width: 80vw;
+    margin-left: 13vw; }
+  #about-img {
+    border-left: 0; }
+  #about-text {
+    margin-top: 5vh;
+    width: 95vw; } }
 
 #houses {
   background-color: #66CDAA; }
@@ -86,6 +128,6 @@
 #footer {
   background-color: #014421; }
 
-#about, #houses, #nature, #sports, #contact {
+#houses, #nature, #sports, #contact {
   height: 500px;
   width: auto; }

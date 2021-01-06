@@ -1,6 +1,12 @@
-%font-1 {
+%font-section-title {
+    color: $color-10;
+    font-size: 21px;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+}
+
+%font-section-text {
+    color: $color-10;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 10px;
+    font-weight: 300;
 }

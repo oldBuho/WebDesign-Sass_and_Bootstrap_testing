@@ -1,4 +1,44 @@
 #about {
-    background: $color-2;
-    @extend %propiedades;
+    background-color: $color-11;
+    height: 100vh;
+    padding: 25vh 0 0 5vw;
+}
+
+#about .section-title {
+    @extend %font-section-title;
+    padding-bottom: 3vh;
+}
+
+#about-img {
+    border-top: 10px solid $color-12;
+    border-left: 10px solid $color-12;
+}
+
+#about-text {
+    background-color: $color-12;
+    width: 40vw;
+    padding: 2%;
+    border-radius: 2%;
+    @extend %font-section-text;
+}
+
+
+@media screen and (max-width: 769px) {
+    #about {
+        padding: 5vh 0 110vh 0;
+    }
+
+    #about-img-contaner {
+        width: 80vw;
+        margin-left: 13vw;
+    }
+
+    #about-img {
+        border-left: 0;
+    }
+
+    #about-text {
+        margin-top: 5vh;
+        width: 95vw;
+    }
 }
