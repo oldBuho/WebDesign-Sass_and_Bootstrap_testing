@@ -15,11 +15,7 @@
   font-weight: 300; }
 
 #navbar-container {
-  background: linear-gradient(320deg, #317873 41%, black 88%);
-  z-index: 1;
-  top: 0;
-  transform: translate(0px, 0px);
-  transition: all ease-out 1s; }
+  background: linear-gradient(320deg, #317873 41%, black 88%); }
 
 #navbar-icon {
   width: 35px;
@@ -36,6 +32,8 @@
     padding-left: 5%; }
 
 @media screen and (min-width: 769px) {
+  #navbar-container {
+    height: 10vh; }
   #navbar-icon {
     margin-right: 5%; }
   #anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar, #anchor-4-navbar, #anchor-5-navbar {
@@ -101,6 +99,38 @@
   padding: 2%;
   border-radius: 2%; }
 
+#about a {
+  text-decoration: none;
+  color: #317873;
+  font-weight: bold; }
+
+#about a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #008B8B;
+  font-style: normal; }
+
+#fade-in {
+  animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#fade-in-1 {
+  animation: fadeIn 5s; }
+
+#fade-in-2 {
+  animation: fadeIn 6s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @media screen and (max-width: 769px) {
   #about {
     padding: 5vh 0 110vh 0; }
@@ -109,9 +139,14 @@
     margin-left: 13vw; }
   #about-img {
     border-left: 0; }
+  #about .section-title {
+    text-align: center;
+    margin-top: 1vh; }
   #about-text {
+    text-align: center;
     margin-top: 5vh;
-    width: 95vw; } }
+    margin-left: 4.3vh;
+    width: 90vw; } }
 
 #houses {
   background-color: #66CDAA; }
@@ -129,5 +164,5 @@
   background-color: #014421; }
 
 #houses, #nature, #sports, #contact {
-  height: 500px;
+  height: 100vh;
   width: auto; }

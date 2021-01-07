@@ -22,6 +22,52 @@
     @extend %font-section-text;
 }
 
+#about a {
+    text-decoration: none;
+    color: $color-1;
+    font-weight: bold;
+}
+
+#about a:hover {
+    text-decoration: none;
+    color: $color-9;
+    background-color: $color-5;
+    font-style: normal;
+}
+#fade-in {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+#fade-in-1 {
+    animation: fadeIn 5s;
+}
+
+#fade-in-2 {
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 769px) {
     #about {
@@ -37,8 +83,15 @@
         border-left: 0;
     }
 
+    #about .section-title {
+        text-align: center;  
+        margin-top: 1vh;      
+    }
+    
     #about-text {
+        text-align: center;
         margin-top: 5vh;
-        width: 95vw;
+        margin-left: 4.3vh;
+        width: 90vw;
     }
 }
