@@ -1,4 +1,59 @@
 #houses {
-    background-color: $color-3;
-    @extend %propiedades;
+    background-color: $color-5;
+    height: 100vh;
+    padding: 25vh 0 0 10vw;
+}
+
+#houses .section-title {
+    @extend %font-section-title;
+    padding-bottom: 3vh;
+}
+
+#houses-text {
+    background-color: $color-12;
+    width: 40vw;
+    padding: 8vh;
+    border-radius: 2%;
+    @extend %font-section-text;
+    text-align: right;
+    margin-right: 2vw;
+}
+
+#houses-carousel {
+    border-top: 10px solid $color-12;
+    border-right: 10px solid $color-12;
+    height: auto;
+    width: 35vw;
+}
+
+#carousel-indicators-bg {
+    background-color: rgba($color: $color-12, $alpha: 0.3);
+}
+
+@media screen and (max-width: 769px) {
+    #houses {
+        padding: 0vh 10vw 3vh 0vw;
+        margin-bottom: 3vh;
+    }
+
+    #houses-carousel {
+        width: 80vw;
+        margin: 2vh 0 0 10vw;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 10px solid $color-12;
+    }
+
+    #houses .section-title {
+        text-align: center;  
+        margin-top: 1vh;      
+    }
+    
+    #houses-text {
+        text-align: center;
+        margin-top: 5vh;
+        margin-left: 4.3vh;
+        width: 90vw;
+        padding: 3vh 1vh 3vh 1vh;
+    }
 }

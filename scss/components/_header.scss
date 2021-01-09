@@ -1,6 +1,7 @@
 #header-container {
     margin-top: 4vh;
-    background-image: url('../images/background-header.jpg');
+    background-image: url('../images/background-header.png');
+    background-repeat: no-repeat;
     height: 96vh;
     width: 100vw;
     background-position: center;
@@ -34,6 +35,19 @@
     letter-spacing: 0.5vw;
     word-spacing: 0.2vw;
     font-size: 22px;
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 769px) {

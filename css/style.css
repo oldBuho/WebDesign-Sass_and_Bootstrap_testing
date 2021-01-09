@@ -1,15 +1,14 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
-#about .section-title {
+#about .section-title, #houses .section-title {
   color: black;
   font-size: 21px;
   font-family: 'Petit Formal Script', cursive;
   font-weight: bold; }
 
-#about-text {
+#about-text, #houses-text {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
@@ -45,7 +44,8 @@
 
 #header-container {
   margin-top: 4vh;
-  background-image: url("../images/background-header.jpg");
+  background-image: url("../images/background-header.png");
+  background-repeat: no-repeat;
   height: 96vh;
   width: 100vw;
   background-position: center; }
@@ -76,6 +76,15 @@
   word-spacing: 0.2vw;
   font-size: 22px; }
 
+.fade-in {
+  animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 @media screen and (max-width: 769px) {
   #header-sub-container {
     height: 50vh;
@@ -91,12 +100,13 @@
 
 #about-img {
   border-top: 10px solid #dff7cb;
-  border-left: 10px solid #dff7cb; }
+  border-left: 10px solid #dff7cb;
+  border-radius: 2%; }
 
 #about-text {
   background-color: #dff7cb;
   width: 40vw;
-  padding: 2%;
+  padding: 3vh;
   border-radius: 2%; }
 
 #about a {
@@ -107,29 +117,7 @@
 #about a:hover {
   text-decoration: none;
   color: white;
-  background-color: #008B8B;
   font-style: normal; }
-
-#fade-in {
-  animation: fadeIn 5s; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-#fade-in-1 {
-  animation: fadeIn 5s; }
-
-#fade-in-2 {
-  animation: fadeIn 6s; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 @media screen and (max-width: 769px) {
   #about {
@@ -146,13 +134,56 @@
     text-align: center;
     margin-top: 5vh;
     margin-left: 4.3vh;
-    width: 90vw; } }
+    width: 90vw;
+    padding: 3vh 1vh 3vh 1vh; } }
 
 #houses {
-  background-color: #66CDAA; }
+  background-color: #008B8B;
+  height: 100vh;
+  padding: 25vh 0 0 10vw; }
+
+#houses .section-title {
+  padding-bottom: 3vh; }
+
+#houses-text {
+  background-color: #dff7cb;
+  width: 40vw;
+  padding: 8vh;
+  border-radius: 2%;
+  text-align: right;
+  margin-right: 2vw; }
+
+#houses-carousel {
+  border-top: 10px solid #dff7cb;
+  border-right: 10px solid #dff7cb;
+  height: auto;
+  width: 35vw; }
+
+#carousel-indicators-bg {
+  background-color: rgba(223, 247, 203, 0.3); }
+
+@media screen and (max-width: 769px) {
+  #houses {
+    padding: 0vh 10vw 3vh 0vw;
+    margin-bottom: 3vh; }
+  #houses-carousel {
+    width: 80vw;
+    margin: 2vh 0 0 10vw;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 10px solid #dff7cb; }
+  #houses .section-title {
+    text-align: center;
+    margin-top: 1vh; }
+  #houses-text {
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 4.3vh;
+    width: 90vw;
+    padding: 3vh 1vh 3vh 1vh; } }
 
 #nature {
-  background-color: #00FA9A; }
+  background-color: #F5F5F5; }
 
 #sports {
   background-color: #008B8B; }
@@ -163,6 +194,6 @@
 #footer {
   background-color: #014421; }
 
-#houses, #nature, #sports, #contact {
+#nature, #sports, #contact {
   height: 100vh;
   width: auto; }

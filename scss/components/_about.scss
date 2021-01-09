@@ -12,12 +12,13 @@
 #about-img {
     border-top: 10px solid $color-12;
     border-left: 10px solid $color-12;
+    border-radius: 2%;
 }
 
 #about-text {
     background-color: $color-12;
     width: 40vw;
-    padding: 2%;
+    padding: 3vh;
     border-radius: 2%;
     @extend %font-section-text;
 }
@@ -31,42 +32,7 @@
 #about a:hover {
     text-decoration: none;
     color: $color-9;
-    background-color: $color-5;
     font-style: normal;
-}
-#fade-in {
-    animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
-#fade-in-1 {
-    animation: fadeIn 5s;
-}
-
-#fade-in-2 {
-    animation: fadeIn 6s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @media screen and (max-width: 769px) {
@@ -93,5 +59,6 @@
         margin-top: 5vh;
         margin-left: 4.3vh;
         width: 90vw;
+        padding: 3vh 1vh 3vh 1vh;
     }
 }

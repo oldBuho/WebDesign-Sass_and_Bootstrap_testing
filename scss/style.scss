@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
 }
 
 @import "base/colors";
-@import "base/fonts";
+@import "base/text-style";
 @import "components/navbar";
 @import "components/header";
 @import "components/about";
