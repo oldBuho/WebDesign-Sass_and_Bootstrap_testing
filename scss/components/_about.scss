@@ -1,7 +1,7 @@
 #about {
     background-color: $color-11;
     height: 100vh;
-    padding: 25vh 0 0 5vw;
+    width: auto;
 }
 
 #about .section-title {
@@ -13,6 +13,8 @@
     border-top: 10px solid $color-12;
     border-left: 10px solid $color-12;
     border-radius: 2%;
+    margin-top: 25vh;
+    margin-left: 4vw;
 }
 
 #about-text {
@@ -21,6 +23,9 @@
     padding: 3vh;
     border-radius: 2%;
     @extend %font-section-text;
+    margin-top: 25vh;
+    margin-left: 5vw;
+
 }
 
 #about a {
@@ -31,22 +36,24 @@
 
 #about a:hover {
     text-decoration: none;
+    background-color: $color-1;
     color: $color-9;
     font-style: normal;
 }
 
 @media screen and (max-width: 769px) {
     #about {
-        padding: 5vh 0 110vh 0;
+        height: 85vh;
     }
 
     #about-img-contaner {
-        width: 80vw;
-        margin-left: 13vw;
+        width: 85vw;
+        margin-left: 2vw;
     }
 
     #about-img {
         border-left: 0;
+        margin-top: 3vh;
     }
 
     #about .section-title {
@@ -56,9 +63,8 @@
     
     #about-text {
         text-align: center;
-        margin-top: 5vh;
-        margin-left: 4.3vh;
+        margin-top: 3vh;
+        margin-left: 4vw;
         width: 90vw;
-        padding: 3vh 1vh 3vh 1vh;
     }
 }

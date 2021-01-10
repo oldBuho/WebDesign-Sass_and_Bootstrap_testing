@@ -1,7 +1,6 @@
 #houses {
     background-color: $color-5;
     height: 100vh;
-    padding: 25vh 0 0 10vw;
 }
 
 #houses .section-title {
@@ -24,6 +23,7 @@
     border-right: 10px solid $color-12;
     height: auto;
     width: 35vw;
+    margin-top: 0.5vh;
 }
 
 #carousel-indicators-bg {

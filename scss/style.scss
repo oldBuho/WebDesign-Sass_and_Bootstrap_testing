@@ -5,14 +5,15 @@
 
 @import "base/colors";
 @import "base/text-style";
+@import "extensions/extend";
+@import "extensions/mixins";
 @import "components/navbar";
 @import "components/header";
 @import "components/about";
-@import "components/houses";
+//@import "components/houses";
 @import "components/nature";
 @import "components/sports";
 @import "components/contact";
 @import "components/footer";
-@import "extensions/extend";
-@import "extensions/mixins";
+
 

@@ -2,16 +2,20 @@
   margin: 0;
   padding: 0; }
 
-#about .section-title, #houses .section-title {
+#about .section-title {
   color: black;
   font-size: 21px;
   font-family: 'Petit Formal Script', cursive;
   font-weight: bold; }
 
-#about-text, #houses-text {
+#about-text {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
+
+#nature, #sports, #contact {
+  height: 100vh;
+  width: auto; }
 
 #navbar-container {
   background: linear-gradient(320deg, #317873 41%, black 88%); }
@@ -43,11 +47,10 @@
       border-left: 0; } }
 
 #header-container {
-  margin-top: 4vh;
   background-image: url("../images/background-header.png");
   background-repeat: no-repeat;
   height: 96vh;
-  width: 100vw;
+  width: auto;
   background-position: center; }
 
 #header-sub-container {
@@ -93,7 +96,7 @@
 #about {
   background-color: #F5F5F5;
   height: 100vh;
-  padding: 25vh 0 0 5vw; }
+  width: auto; }
 
 #about .section-title {
   padding-bottom: 3vh; }
@@ -101,13 +104,17 @@
 #about-img {
   border-top: 10px solid #dff7cb;
   border-left: 10px solid #dff7cb;
-  border-radius: 2%; }
+  border-radius: 2%;
+  margin-top: 25vh;
+  margin-left: 4vw; }
 
 #about-text {
   background-color: #dff7cb;
   width: 40vw;
   padding: 3vh;
-  border-radius: 2%; }
+  border-radius: 2%;
+  margin-top: 25vh;
+  margin-left: 5vw; }
 
 #about a {
   text-decoration: none;
@@ -116,71 +123,27 @@
 
 #about a:hover {
   text-decoration: none;
+  background-color: #317873;
   color: white;
   font-style: normal; }
 
 @media screen and (max-width: 769px) {
   #about {
-    padding: 5vh 0 110vh 0; }
+    height: 85vh; }
   #about-img-contaner {
-    width: 80vw;
-    margin-left: 13vw; }
+    width: 85vw;
+    margin-left: 2vw; }
   #about-img {
-    border-left: 0; }
+    border-left: 0;
+    margin-top: 3vh; }
   #about .section-title {
     text-align: center;
     margin-top: 1vh; }
   #about-text {
     text-align: center;
-    margin-top: 5vh;
-    margin-left: 4.3vh;
-    width: 90vw;
-    padding: 3vh 1vh 3vh 1vh; } }
-
-#houses {
-  background-color: #008B8B;
-  height: 100vh;
-  padding: 25vh 0 0 10vw; }
-
-#houses .section-title {
-  padding-bottom: 3vh; }
-
-#houses-text {
-  background-color: #dff7cb;
-  width: 40vw;
-  padding: 8vh;
-  border-radius: 2%;
-  text-align: right;
-  margin-right: 2vw; }
-
-#houses-carousel {
-  border-top: 10px solid #dff7cb;
-  border-right: 10px solid #dff7cb;
-  height: auto;
-  width: 35vw; }
-
-#carousel-indicators-bg {
-  background-color: rgba(223, 247, 203, 0.3); }
-
-@media screen and (max-width: 769px) {
-  #houses {
-    padding: 0vh 10vw 3vh 0vw;
-    margin-bottom: 3vh; }
-  #houses-carousel {
-    width: 80vw;
-    margin: 2vh 0 0 10vw;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 10px solid #dff7cb; }
-  #houses .section-title {
-    text-align: center;
-    margin-top: 1vh; }
-  #houses-text {
-    text-align: center;
-    margin-top: 5vh;
-    margin-left: 4.3vh;
-    width: 90vw;
-    padding: 3vh 1vh 3vh 1vh; } }
+    margin-top: 3vh;
+    margin-left: 4vw;
+    width: 90vw; } }
 
 #nature {
   background-color: #F5F5F5; }
@@ -193,7 +156,3 @@
 
 #footer {
   background-color: #014421; }
-
-#nature, #sports, #contact {
-  height: 100vh;
-  width: auto; }
