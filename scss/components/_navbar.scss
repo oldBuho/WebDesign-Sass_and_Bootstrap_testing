@@ -1,40 +1,42 @@
 #navbar-container {
-    background: linear-gradient(320deg, $color-1 41%, rgba(0,0,0,1) 88%);
-}
-
-#navbar-icon {
-    width: 35px;
-    height: auto;
-    background-color: $color-9;
-    border-radius: 20%;
-    border: 1px solid $color-8;
-}
-
-#anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar,#anchor-4-navbar,#anchor-5-navbar {
-    color: $color-9;
-    &:hover {
-        border-left: 1px solid $color-9;
-        color: $color-8;
-        padding-left: 5%;
+    background: linear-gradient(320deg, rgba(205,205,205,1) 0%, rgba(0,0,0,1) 37%);
+    #navbar-icon {
+        width: 35px;
+        height: auto;
+        background-color: $color-9;
+        border-radius: 20%;
+        border: 3px solid $color-13;
+        margin-right: 5vh;
+    }
+    #navbar-button-border {
+        border-color: $color-11;
+    }
+    #anchor-navbar {
+        color: $color-9;
+        &:hover {
+            border-top: 1px solid $color-9;
+            border-bottom: 1px solid $color-9;
+            color: $color-8;
+            padding-left: 6%;
+        }
     }
 }
-
 
 @media screen and (min-width: 769px) {
     #navbar-container {
         height: 10vh;
+        #navbar-icon{
+            margin-right: 2vw;
+            margin-left: 1vw;
+        }          
+        #anchor-navbar {
+            margin-left: 5%;
+        } 
     }
-    #navbar-icon{
-        margin-right: 5%;
-    }
-    #anchor-1-navbar, #anchor-2-navbar, #anchor-3-navbar,#anchor-4-navbar,#anchor-5-navbar {
-        margin-left: 5%;
-        &:hover {
-        border-bottom: 1px solid $color-9;
-        border-top: 1px solid $color-9;
-        border-left: 0;
-        }
-    } 
 }
+
+
+
+
 
 

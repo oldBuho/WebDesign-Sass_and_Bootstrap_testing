@@ -1,57 +1,65 @@
 #header-container {
     background-image: url('../images/background-header.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 96vh;
     width: auto;
-    background-position: center;
-}
-    
-#header-sub-container {
-    text-align: center;
-    background-color: rgba(49, 120, 115, 0.5);
-    height: 60vh;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: $color-9;
-    padding-top: 10%;
-}
-
-#header-h1 {
-    letter-spacing: 1vw;
-    word-spacing: 1vw;
-    font-size: 35px;
-    padding-top: 1vh;
-}
-
-#header-h2 {
-    letter-spacing: 0.5vw;
-    word-spacing: 0.3vw;
-    font-size: 25px;
-    padding: 4vh;
-}
-
-#header-h3 {
-    letter-spacing: 0.5vw;
-    word-spacing: 0.2vw;
-    font-size: 22px;
-}
-
-.fade-in {
-    animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    #header-sub-container {
+        text-align: center;
+        background-color: rgba($color: $color-10, $alpha: 0.6);
+        height: 60vh;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: $color-9;
+        padding-top: 10%;
+        #header-h1 {
+            letter-spacing: 1vw;
+            word-spacing: 1vw;
+            font-size: 35px;
+            padding-top: 1vh;
+        }
+        #header-h2 {
+            letter-spacing: 0.5vw;
+            word-spacing: 0.3vw;
+            font-size: 25px;
+            padding: 4vh;
+        }
+        #header-h3 {
+            letter-spacing: 0.5vw;
+            word-spacing: 0.2vw;
+            font-size: 22px;
+        }
+    }    
+    .fade-in {
+        animation: fadeIn 5s;
+        -webkit-animation: fadeIn 5s;
+        -o-animation: fadeIn 5s;
+        -moz-animation: fadeIn 5s;
     }
-    to {
-        opacity: 1;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+    #header-sub-container {
+        height: 50vh;
+        padding-top: 10vh;
     }
 }
 
 @media screen and (max-width: 769px) {
     #header-sub-container {
-        height: 50vh;
-        padding-top: 20%;
+        height: 40vh;
+        padding-top: 10vh;
     }
 }

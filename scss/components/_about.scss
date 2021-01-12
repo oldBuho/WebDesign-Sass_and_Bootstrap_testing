@@ -2,69 +2,61 @@
     background-color: $color-11;
     height: 100vh;
     width: auto;
+    #about-img {
+        border-top: 10px solid $color-12;
+        border-left: 10px solid $color-12;
+        border-radius: 2%;
+        margin-top: 25vh;
+        margin-left: 4vw;
+    } 
+    #about-text {
+        background-color: $color-12;
+        width: 40vw;
+        padding: 3vh;
+        border-radius: 2%;
+        @extend %font-section-text;
+        margin-top: 25vh;
+        margin-left: 5vw;
+        .section-title {
+            @extend %font-section-title;
+            padding-bottom: 3vh;
+        }
+        a {
+            text-decoration: none;
+            color: $color-1;
+            font-weight: bold;
+            &:hover {
+                text-decoration: none;
+                background-color: $color-1;
+                color: $color-9;
+                font-style: normal;
+            }
+        }
+    }
 }
 
-#about .section-title {
-    @extend %font-section-title;
-    padding-bottom: 3vh;
-}
-
-#about-img {
-    border-top: 10px solid $color-12;
-    border-left: 10px solid $color-12;
-    border-radius: 2%;
-    margin-top: 25vh;
-    margin-left: 4vw;
-}
-
-#about-text {
-    background-color: $color-12;
-    width: 40vw;
-    padding: 3vh;
-    border-radius: 2%;
-    @extend %font-section-text;
-    margin-top: 25vh;
-    margin-left: 5vw;
-
-}
-
-#about a {
-    text-decoration: none;
-    color: $color-1;
-    font-weight: bold;
-}
-
-#about a:hover {
-    text-decoration: none;
-    background-color: $color-1;
-    color: $color-9;
-    font-style: normal;
-}
 
 @media screen and (max-width: 769px) {
     #about {
-        height: 85vh;
-    }
-
-    #about-img-contaner {
-        width: 85vw;
-        margin-left: 2vw;
-    }
-
-    #about-img {
-        border-left: 0;
-        margin-top: 3vh;
-    }
-
-    #about .section-title {
-        text-align: center;  
-        margin-top: 1vh;      
-    }
-    
-    #about-text {
-        text-align: center;
-        margin-top: 3vh;
-        margin-left: 4vw;
-        width: 90vw;
+        height: 100vh;
+        #about-text {
+            text-align: center;
+            margin-top: 3vh;
+            margin-left: 4vw;
+            width: 90vw;
+            .section-title {
+                text-align: center;  
+                margin-top: 1vh;      
+            }
+        }
+        #about-img-contaner {
+            width: 85vw;
+            margin-left: 2vw;       
+            #about-img {
+                border-left: 0;
+                margin-top: 10vh;
+            }
+        }
     }
 }
+

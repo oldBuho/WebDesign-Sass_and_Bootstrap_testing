@@ -10,10 +10,12 @@
 @import "components/navbar";
 @import "components/header";
 @import "components/about";
-//@import "components/houses";
+@import "components/houses";
 @import "components/nature";
 @import "components/sports";
 @import "components/contact";
 @import "components/footer";
 
-
+body {
+    background-color: $color-11;
+}

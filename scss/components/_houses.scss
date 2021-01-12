@@ -1,59 +1,68 @@
 #houses {
     background-color: $color-5;
     height: 100vh;
+    width: auto;
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #houses-text {
+        background-color: $color-12;
+        width: 40vw;
+        padding: 6vh;
+        border-radius: 2%;
+        @extend %font-section-text;
+        text-align: left;
+        .section-title {
+            @extend %font-section-title;
+            padding-bottom: 3vh;
+        }
+    }
+    #houses-carousel {
+        border-right: 10px solid $color-12;
+        height: auto;
+        width: 45vw;
+        border-radius: 2%;
+        #carousel-indicators-bg {
+            background-color: rgba($color: $color-12, $alpha: 0.5);
+        }
+    }
 }
 
-#houses .section-title {
-    @extend %font-section-title;
-    padding-bottom: 3vh;
-}
-
-#houses-text {
-    background-color: $color-12;
-    width: 40vw;
-    padding: 8vh;
-    border-radius: 2%;
-    @extend %font-section-text;
-    text-align: right;
-    margin-right: 2vw;
-}
-
-#houses-carousel {
-    border-top: 10px solid $color-12;
-    border-right: 10px solid $color-12;
-    height: auto;
-    width: 35vw;
-    margin-top: 0.5vh;
-}
-
-#carousel-indicators-bg {
-    background-color: rgba($color: $color-12, $alpha: 0.3);
-}
 
 @media screen and (max-width: 769px) {
     #houses {
-        padding: 0vh 10vw 3vh 0vw;
-        margin-bottom: 3vh;
-    }
+        height: 100vh;
+        padding-top: 0;
+        #houses-text {
+            text-align: center;
+            margin-top: 5vh;
+            margin-left: 4vh;
+            width: 90vw;
+            padding: 3vh 1vh 3vh 1vh;
+            .section-title {
+                text-align: center;  
+                margin-top: 1vh;      
+            }
+        }  
+        #houses-carousel {
+            width: 80vw;
+            margin: 2vh 0vw 0 8vw;
+            border-right: 0;
+            border-bottom: 10px solid $color-12;
+        }
+    } 
+}
 
-    #houses-carousel {
-        width: 80vw;
-        margin: 2vh 0 0 10vw;
-        border-right: 0;
-        border-top: 0;
-        border-bottom: 10px solid $color-12;
-    }
-
-    #houses .section-title {
-        text-align: center;  
-        margin-top: 1vh;      
-    }
-    
-    #houses-text {
-        text-align: center;
-        margin-top: 5vh;
-        margin-left: 4.3vh;
-        width: 90vw;
-        padding: 3vh 1vh 3vh 1vh;
+@media screen and (max-width: 425px) {
+    #houses {
+        height: 85vh;
+        padding-top: 0;
+        #houses-text {
+            margin-left: 4.5vw;
+        }
+        #houses-carousel {
+            margin-left: 6vw;
+        }
     }
 }
