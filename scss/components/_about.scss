@@ -3,14 +3,14 @@
     height: 100vh;
     width: auto;
     #about-img {
-        border-top: 10px solid $color-12;
-        border-left: 10px solid $color-12;
+        border-top: 10px solid $color-15;
+        border-left: 10px solid $color-15;
         border-radius: 2%;
         margin-top: 25vh;
         margin-left: 4vw;
     } 
     #about-text {
-        background-color: $color-12;
+        background-color: $color-15;
         width: 40vw;
         padding: 3vh;
         border-radius: 2%;
@@ -23,12 +23,12 @@
         }
         a {
             text-decoration: none;
-            color: $color-1;
+            color: $color-7;
             font-weight: bold;
             &:hover {
                 text-decoration: none;
                 background-color: $color-1;
-                color: $color-9;
+                color: $color-14;
                 font-style: normal;
             }
         }

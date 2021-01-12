@@ -18,21 +18,20 @@
   width: auto; }
 
 #navbar-container {
-  background: linear-gradient(320deg, #cdcdcd 0%, black 37%); }
+  background: linear-gradient(320deg, #cdcdcd 0%, black 37%);
+  border-bottom: 1px solid white; }
   #navbar-container #navbar-icon {
     width: 35px;
     height: auto;
     background-color: white;
     border-radius: 20%;
-    border: 3px solid #D4AF37;
+    border: 3px solid #ced4da;
     margin-right: 5vh; }
   #navbar-container #navbar-button-border {
     border-color: #F5F5F5; }
   #navbar-container #anchor-navbar {
     color: white; }
     #navbar-container #anchor-navbar:hover {
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
       color: #DADD98;
       padding-left: 6%; }
 
@@ -43,7 +42,14 @@
       margin-right: 2vw;
       margin-left: 1vw; }
     #navbar-container #anchor-navbar {
-      margin-left: 5%; } }
+      margin-left: 5%; }
+      #navbar-container #anchor-navbar:hover {
+        border-bottom: 1px solid white;
+        border-top: 1px solid white; } }
+
+@media screen and (max-width: 769px) {
+  #anchor-navbar:hover {
+    border-left: 1px solid white; } }
 
 #header-container {
   background-image: url("../images/background-header.png");
@@ -101,13 +107,13 @@
   height: 100vh;
   width: auto; }
   #about #about-img {
-    border-top: 10px solid #dff7cb;
-    border-left: 10px solid #dff7cb;
+    border-top: 10px solid #a4c3b2;
+    border-left: 10px solid #a4c3b2;
     border-radius: 2%;
     margin-top: 25vh;
     margin-left: 4vw; }
   #about #about-text {
-    background-color: #dff7cb;
+    background-color: #a4c3b2;
     width: 40vw;
     padding: 3vh;
     border-radius: 2%;
@@ -117,12 +123,12 @@
       padding-bottom: 3vh; }
     #about #about-text a {
       text-decoration: none;
-      color: #317873;
+      color: #014421;
       font-weight: bold; }
       #about #about-text a:hover {
         text-decoration: none;
         background-color: #317873;
-        color: white;
+        color: #b6b6b5;
         font-style: normal; }
 
 @media screen and (max-width: 769px) {
@@ -144,15 +150,15 @@
         margin-top: 10vh; } }
 
 #houses {
-  background-color: #008B8B;
+  background-color: #b6b6b5;
   height: 100vh;
   width: auto;
-  padding-top: 20vh;
+  padding-top: 15vh;
   display: flex;
   align-items: center;
   justify-content: center; }
   #houses #houses-text {
-    background-color: #dff7cb;
+    background-color: #c5dedd;
     width: 40vw;
     padding: 6vh;
     border-radius: 2%;
@@ -160,12 +166,12 @@
     #houses #houses-text .section-title {
       padding-bottom: 3vh; }
   #houses #houses-carousel {
-    border-right: 10px solid #dff7cb;
+    border-right: 10px solid #c5dedd;
     height: auto;
     width: 45vw;
     border-radius: 2%; }
     #houses #houses-carousel #carousel-indicators-bg {
-      background-color: rgba(223, 247, 203, 0.5); }
+      background-color: rgba(182, 182, 181, 0.8); }
 
 @media screen and (max-width: 769px) {
   #houses {
@@ -184,7 +190,7 @@
       width: 80vw;
       margin: 2vh 0vw 0 8vw;
       border-right: 0;
-      border-bottom: 10px solid #dff7cb; } }
+      border-bottom: 10px solid #c5dedd; } }
 
 @media screen and (max-width: 425px) {
   #houses {

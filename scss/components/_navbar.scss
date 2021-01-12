@@ -1,5 +1,6 @@
 #navbar-container {
     background: linear-gradient(320deg, rgba(205,205,205,1) 0%, rgba(0,0,0,1) 37%);
+    border-bottom: 1px solid $color-9;
     #navbar-icon {
         width: 35px;
         height: auto;
@@ -14,8 +15,6 @@
     #anchor-navbar {
         color: $color-9;
         &:hover {
-            border-top: 1px solid $color-9;
-            border-bottom: 1px solid $color-9;
             color: $color-8;
             padding-left: 6%;
         }
@@ -31,11 +30,19 @@
         }          
         #anchor-navbar {
             margin-left: 5%;
-        } 
+            &:hover {
+                border-bottom: 1px solid $color-9;
+                border-top: 1px solid $color-9;
+            }    
+        }     
     }
 }
 
-
+@media screen and (max-width: 769px) {   
+    #anchor-navbar:hover {
+            border-left: 1px solid $color-9;
+    }    
+}
 
 
 
