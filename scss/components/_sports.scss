@@ -1,4 +1,44 @@
 #sports {
-    background-color:$color-5;
-    @extend %propiedades;
+    background-color: $color-11;
+    height: 100vh;
+    width: auto;
+    padding-top: 15vh;
+    text-align: center;
+    #sports-img {
+        border-top: 10px solid $color-15;
+        border-left: 10px solid $color-15;
+        border-radius: 2%;
+    }
+    #sports-text {
+        background-color: $color-15;
+        width: 50vw;
+        padding: 3vh;
+        margin: 5vh 0 0 25vw;
+        border-radius: 2%;
+        .section-title {
+            @extend %font-section-title;
+            padding-bottom: 3vh;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 769px) {
+    #sports {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+        #sports-img {
+            width: 85vw;
+            border-left: 0;
+            margin-left: -5%;
+        }
+        #sports-text{
+            width: 90vw;
+            height: auto;
+            margin-left: 3vw;
+            padding: 1%;
+        }
+    }
 }
