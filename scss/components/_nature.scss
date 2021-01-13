@@ -1,4 +1,56 @@
 #nature {
-    background-color: $color-11;
-    @extend %propiedades;
+    background-image: url(../../images/background-nature.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    #nature-video {
+        border-top: 10px solid $color-15;
+        border-left: 10px solid $color-15;
+        border-radius: 2%;
+        margin-top: 25vh;
+        margin-left: 5vw;
+        width: 40vw;
+        height: auto;
+    } 
+    #nature-text {
+        background-color: $color-15;
+        width: 40vw;
+        padding: 11vh 3vw 3vh;
+        border-radius: 2%;
+        @extend %font-section-text;
+        margin-top: 25vh;
+        margin-left: 1vw;
+        .section-title {
+            @extend %font-section-title;
+            padding-bottom: 3vh;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #nature {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+        #nature-video {
+            width: 90vw;
+            border-left: 0;
+            margin-left: 2.5vw;
+            margin-top: 0;
+        }
+        #nature-text {
+            width: 90vw;
+            height: auto;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            padding: 1%;
+            text-align: center;
+            .section-title {
+                padding-top: 1vh;
+                padding-bottom: 1.5vh;
+            }
+        }
+    }
 }

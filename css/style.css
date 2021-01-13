@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0; }
 
-#about #about-text .section-title, #houses #houses-text .section-title, #sports #sports-text .section-title {
+#about #about-text .section-title, #houses #houses-text .section-title, #nature #nature-text .section-title, #sports #sports-text .section-title {
   color: black;
   font-size: 21px;
   font-family: 'Petit Formal Script', cursive;
   font-weight: bold; }
 
-#about #about-text, #houses #houses-text, #footer h4 {
+#about #about-text, #houses #houses-text, #nature #nature-text, #footer h4 {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
-#nature, #contact {
+#contact {
   height: 100vh;
   width: auto; }
 
@@ -194,7 +194,50 @@
       margin-left: 6vw; } }
 
 #nature {
-  background-color: #F5F5F5; }
+  background-image: url(../../images/background-nature.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: auto; }
+  #nature #nature-video {
+    border-top: 10px solid #a4c3b2;
+    border-left: 10px solid #a4c3b2;
+    border-radius: 2%;
+    margin-top: 25vh;
+    margin-left: 5vw;
+    width: 40vw;
+    height: auto; }
+  #nature #nature-text {
+    background-color: #a4c3b2;
+    width: 40vw;
+    padding: 11vh 3vw 3vh;
+    border-radius: 2%;
+    margin-top: 25vh;
+    margin-left: 1vw; }
+    #nature #nature-text .section-title {
+      padding-bottom: 3vh; }
+
+@media screen and (max-width: 769px) {
+  #nature {
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 2vh; }
+    #nature #nature-video {
+      width: 90vw;
+      border-left: 0;
+      margin-left: 2.5vw;
+      margin-top: 0; }
+    #nature #nature-text {
+      width: 90vw;
+      height: auto;
+      margin-top: 3vh;
+      margin-left: 5vw;
+      padding: 1%;
+      text-align: center; }
+      #nature #nature-text .section-title {
+        padding-top: 1vh;
+        padding-bottom: 1.5vh; } }
 
 #sports {
   background-color: #F5F5F5;
