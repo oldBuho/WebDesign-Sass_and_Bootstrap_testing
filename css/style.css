@@ -2,20 +2,16 @@
   margin: 0;
   padding: 0; }
 
-#about #about-text .section-title, #houses #houses-text .section-title, #nature #nature-text .section-title, #sports #sports-text .section-title {
+#about #about-text .section-title, #houses #houses-text .section-title, #nature #nature-text .section-title, #sports #sports-text .section-title, #contact #contact-text .section-title {
   color: black;
   font-size: 21px;
   font-family: 'Petit Formal Script', cursive;
   font-weight: bold; }
 
-#about #about-text, #houses #houses-text, #nature #nature-text, #footer h4 {
+#about #about-text, #houses #houses-text, #nature #nature-text, #contact #contact-text, #footer h4 {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
-
-#contact {
-  height: 100vh;
-  width: auto; }
 
 #navbar-container {
   background: linear-gradient(320deg, #cdcdcd 0%, black 37%);
@@ -92,6 +88,10 @@
   to {
     opacity: 1; } }
 
+@media screen and (max-width: 769px) {
+  #header-h1 {
+    margin-top: 33%; } }
+
 #about {
   background-color: #F5F5F5;
   height: 100vh;
@@ -108,7 +108,9 @@
     padding: 3vh;
     border-radius: 2%;
     margin-top: 25vh;
-    margin-left: 5vw; }
+    margin-left: 5vw;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0);
+    box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0); }
     #about #about-text .section-title {
       padding-bottom: 3vh; }
     #about #about-text a {
@@ -128,7 +130,7 @@
     #about #about-text {
       text-align: center;
       margin-top: 3vh;
-      margin-left: 4vw;
+      margin-left: 3vw;
       width: 90vw; }
       #about #about-text .section-title {
         text-align: center;
@@ -150,6 +152,8 @@
   justify-content: center; }
   #houses #houses-text {
     background-color: #c5dedd;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0);
+    box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0);
     width: 40vw;
     padding: 6vh;
     border-radius: 2%;
@@ -174,7 +178,7 @@
       margin-top: 5vh;
       margin-left: 4vh;
       width: 90vw;
-      padding: 3vh 1vh 3vh 1vh; }
+      padding: 3vh 1.5vh 3vh 1.5vh; }
       #houses #houses-text .section-title {
         text-align: center;
         margin-top: 1vh; }
@@ -189,32 +193,37 @@
     height: auto;
     margin-bottom: 1vh; }
     #houses #houses-text {
-      margin-left: 4.5vw; }
+      margin-left: 4vw; }
     #houses #houses-carousel {
       margin-left: 6vw; } }
 
 #nature {
-  background-image: url(../../images/background-nature.png);
+  background-image: url(../images/background-nature.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 100vh;
   width: auto; }
   #nature #nature-video {
-    border-top: 10px solid #a4c3b2;
-    border-left: 10px solid #a4c3b2;
+    border-top: 10px solid #c5dedd;
+    border-left: 10px solid #c5dedd;
     border-radius: 2%;
     margin-top: 25vh;
     margin-left: 5vw;
     width: 40vw;
     height: auto; }
   #nature #nature-text {
-    background-color: #a4c3b2;
+    background-color: #c5dedd;
     width: 40vw;
     padding: 11vh 3vw 3vh;
     border-radius: 2%;
     margin-top: 25vh;
-    margin-left: 1vw; }
+    margin-left: 1vw;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0);
+    box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0); }
     #nature #nature-text .section-title {
       padding-bottom: 3vh; }
 
@@ -233,7 +242,7 @@
       height: auto;
       margin-top: 3vh;
       margin-left: 5vw;
-      padding: 1%;
+      padding: 4.5%;
       text-align: center; }
       #nature #nature-text .section-title {
         padding-top: 1vh;
@@ -254,7 +263,9 @@
     width: 50vw;
     padding: 3vh;
     margin: 5vh 0 0 25vw;
-    border-radius: 2%; }
+    border-radius: 2%;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0);
+    box-shadow: inset 4px 4px 15px 0px #5f5f5f, -50px 40px 0px 31px rgba(0, 0, 0, 0); }
     #sports #sports-text .section-title {
       padding-bottom: 3vh; }
 
@@ -270,15 +281,112 @@
     #sports #sports-text {
       width: 90vw;
       height: auto;
-      margin-left: 3vw;
-      padding: 1%; } }
+      margin-left: 4vw;
+      padding: 4.5%; }
+      #sports #sports-text .section-title {
+        padding-top: 1vh; } }
 
 #contact {
-  background-color: #006A4E; }
+  background-color: #F5F5F5;
+  height: auto;
+  width: auto;
+  padding: 15vh 2vw 5vh 5vw; }
+  #contact #contact-text {
+    text-align: center;
+    margin-bottom: 5vh; }
+  #contact #subtitle-and-form-container {
+    padding-left: 4vw; }
+    #contact #subtitle-and-form-container .contact-sub-title {
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bolder; }
+    #contact #subtitle-and-form-container form {
+      display: flex;
+      flex-direction: column;
+      width: 35vw;
+      background-color: #c5dedd;
+      padding: 2%;
+      border-radius: 2%; }
+      #contact #subtitle-and-form-container form label {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        padding-top: 5%;
+        padding-bottom: 3%; }
+      #contact #subtitle-and-form-container form input, #contact #subtitle-and-form-container form #user-text {
+        padding: 2%;
+        border: 0;
+        border-radius: 4%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px; }
+      #contact #subtitle-and-form-container form button {
+        flex: auto;
+        border: none;
+        flex: 1;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding: 2% 0 2%;
+        margin-top: 2vh; }
+      #contact #subtitle-and-form-container form #submit-btn {
+        background-color: #a4c3b2;
+        border-radius: 0 0 0 8%; }
+        #contact #subtitle-and-form-container form #submit-btn:hover {
+          background-color: #014421;
+          color: white; }
+      #contact #subtitle-and-form-container form #reset-btn {
+        background-color: #b6b6b5;
+        border-radius: 0 0 8% 0; }
+        #contact #subtitle-and-form-container form #reset-btn:hover {
+          background-color: red;
+          color: white; }
+      #contact #subtitle-and-form-container form button:last-of-type {
+        border-left: 2px solid white; }
+      #contact #subtitle-and-form-container form #form-btn-container {
+        display: flex;
+        justify-content: space-around; }
+  #contact #subtitle-and-map-container {
+    padding-left: 4vw; }
+    #contact #subtitle-and-map-container .contact-sub-title {
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bolder; }
+    #contact #subtitle-and-map-container p {
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      font-size: 14px; }
+    #contact #subtitle-and-map-container #contact-map {
+      width: 35vw;
+      height: auto;
+      border: 10px solid #c5dedd;
+      border-radius: 2%; }
+      #contact #subtitle-and-map-container #contact-map:hover {
+        opacity: 0.6;
+        transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -moz-transform: scale(0.95); }
+
+@media screen and (max-width: 769px) {
+  #contact {
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 2vh; }
+    #contact #subtitle-and-form-container form {
+      width: 85vw; }
+    #contact #subtitle-and-map-container {
+      margin-top: 6vh;
+      margin-bottom: 6vh;
+      width: 90%; }
+      #contact #subtitle-and-map-container #contact-map {
+        text-align: center;
+        width: 90vw; } }
 
 #footer {
   background: linear-gradient(320deg, #cdcdcd 0%, black 37%);
-  border-top: 1px solid white; }
+  border-top: 1px solid white;
+  height: auto; }
   #footer h4 {
     font-size: 15px;
     text-align: center;

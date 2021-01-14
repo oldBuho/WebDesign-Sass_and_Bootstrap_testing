@@ -1,27 +1,32 @@
 #nature {
-    background-image: url(../../images/background-nature.png);
+    background-image: url(../images/background-nature.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: auto;
     #nature-video {
-        border-top: 10px solid $color-15;
-        border-left: 10px solid $color-15;
+        border-top: 10px solid $color-12;
+        border-left: 10px solid $color-12;
         border-radius: 2%;
         margin-top: 25vh;
         margin-left: 5vw;
         width: 40vw;
         height: auto;
-    } 
+        } 
     #nature-text {
-        background-color: $color-15;
+        background-color: $color-12;
         width: 40vw;
         padding: 11vh 3vw 3vh;
         border-radius: 2%;
         @extend %font-section-text;
         margin-top: 25vh;
         margin-left: 1vw;
+        -webkit-box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0); 
+        box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0);
         .section-title {
             @extend %font-section-title;
             padding-bottom: 3vh;
@@ -33,7 +38,7 @@
     #nature {
         height: auto;
         padding-top: 10vh;
-        padding-bottom: 2vh;
+        padding-bottom: 2vh;         
         #nature-video {
             width: 90vw;
             border-left: 0;
@@ -45,7 +50,7 @@
             height: auto;
             margin-top: 3vh;
             margin-left: 5vw;
-            padding: 1%;
+            padding: 4.5%;
             text-align: center;
             .section-title {
                 padding-top: 1vh;

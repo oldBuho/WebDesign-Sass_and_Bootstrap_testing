@@ -20,16 +20,16 @@
     <meta property="og:title " content="La Arboleda | Canning" />
     <meta
       property="og:description"
-      content="Complejo habitacional de alto nivel en contacto con la naturaleza"
+      content="Complejo habitacional de alto nivel y en contacto con la naturaleza"
     />
-    <meta property="og:url" content="https://laarboleda.com.ar" />
-    <meta property="og:image" content="images/happy-family.png" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:hight" content="300" />
-    <meta property="og:image:alt" content="familia feliz en paisaje de campo" />
+    <meta property="og:url" content="https://oldbuho.github.io/webdev-coderhouse/"/>
+    <meta property="og:image" content="images/happy-family.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:hight" content="627"/>
+    <meta property="og:image:alt" content="familia feliz en paisaje de campo"/>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
     <!-- BOOTSTRAP CSS -->
     <link
@@ -60,6 +60,7 @@
   </head>
 
   <body>
+
     <!-- NAVBAR -->
 
     <nav
@@ -125,6 +126,7 @@
     </header>
 
     <!-- #ABOUT-->
+
     <section id="about" class="container-fluid">
       <div class="row">
         <div class="col-md-6" id="about-img-contaner">
@@ -158,7 +160,7 @@
               para todos los gustos.
             </p>
             <p>
-              Si estas listo para llevar una vida mas placentera y saludable
+              Si estás listo para llevar una vida mas placentera y saludable
               <em><a href="#contact" class="unite-anchor">HABLEMOS</a></em
               >.
             </p>
@@ -167,7 +169,7 @@
       </div>
     </section>
 
-    <!--#HOUSES-->
+    <!-- #HOUSES -->
     
     <section id="houses" class="container-fluid">
       <div class="row">
@@ -238,7 +240,7 @@
               se encuentran los distintos espacios deportivos.
             </p>
             <p></p>
-              Si bien tenis y futbol se destacan, por tener oficializados sus equipos en los torneos locales, 
+              Si bien tenis y fútbol se destacan, por tener oficializados sus equipos en los torneos locales, 
               la oferta deportiva es amplia y eso es uno de los pilares fundamentales de este complejo.
             </p>
           </div>
@@ -249,8 +251,8 @@
     <!-- #NATURE -->
     <section id="nature" class="container-fluid">
       <div class="row">
-        <div class="col-md-6" id="nature-video-contaner">
-          <video src="videos/woods.mp4" autoplay loop id="nature-video"></video>
+        <div class="col-md-6" id="nature-video-container">
+          <video src="videos/woods.mp4" controls autoplay loop id="nature-video"></video>
         </div>
         <div id="nature-text" class="col-md-6">
           <h2 class="section-title">Naturaleza</h2>
@@ -262,10 +264,52 @@
       </div>
     </section>
     
-    <section id="contact">contact</section>
+    <!-- #CONCTACT -->
+    <section id="contact" class="container-fluid">
+      <div class="row">
+        <div id="contact-text" class="col-md-12">
+          <h2 class="section-title">Contacto</h2>
+          <p>Te invitamos a contactarte con nuestro equipo de atención para hablar de tu futuro.</p>
+        </div>
+      <div class="row">
+        <div class="col-md-6" id="subtitle-and-form-container">
+          <h3 class="contact-sub-title">Completá el formulario:</h3>
+          <form>
+            <label for="fname">Nombre</label>
+            <input type="text" name="fname" id="fname" placeholder="ej: John" required>
+            <label for="lname">Apellido</label>
+            <input type="text" name="lname" id="lname" placeholder="ej: Doe" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="ej: johndoe@mail.com" required>
+            <label for="phone">Teléfono</label>
+            <input type="tel" name="phone" id="phone" required placeholder="ej: 1125614947">
+            <label for="user-text">Comentarios</label>
+            <textarea name="user-text" id="user-text" cols="30" rows="10" placeholder="Contános tus inquietudes" required></textarea>
+            <div id="form-btn-container">
+                <button type="submit" id="submit-btn" >Enviar</button>
+                <button type="reset" id="reset-btn">Borrar datos</button>
+            </div>
+        </form>
+        </div>
+        <div class="col-md-6" id="subtitle-and-map-container">
+          <h3 class="contact-sub-title">Ubicación:</h3>
+          <p>Hacer click en el mapa para abrirlo en Google Maps.</p>
+          <a target="_blank" href="https://www.google.com/maps/place/Canning,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcd6fa531dee35:0x2effecb5cd307cad?sa=X&ved=2ahUKEwiZq_OB5ZvuAhUNGrkGHUHTDN4Q8gEwAHoECAYQAQ">
+            <img id="contact-map" src="images/journey-map.png" alt="Mapa de ubicación del complejo">
+          </a>
+        </div>
+      </div> 
+
+
+      </div>
+
+
+    </section>
+
+    <!-- FOOTER -->
     <footer id="footer" class="container-fluid"> 
       <h4>
-        by FJ °.°    
+        by F.J.  °.°    
         <a href="https://www.linkedin.com/in/federicojuiz/" target="_blank">
           <img src="images/linkedin-icon.png" alt="Linked In">
         </a>

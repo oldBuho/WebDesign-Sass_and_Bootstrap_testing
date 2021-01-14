@@ -1,4 +1,128 @@
 #contact {
-    background-color: $color-6;
-    @extend %propiedades;
+    background-color: $color-11;
+    height: auto;
+    width: auto;
+    padding: 15vh 2vw 5vh 5vw;
+    #contact-text {
+        text-align: center;
+        @extend %font-section-text;
+        margin-bottom: 5vh;
+        .section-title {
+            @extend %font-section-title;
+            }
+    }
+    #subtitle-and-form-container {
+        padding-left: 4vw;
+        .contact-sub-title {
+            color: $color-10;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        form {
+            display: flex;
+            flex-direction: column;                     
+            width: 35vw;
+            background-color: $color-12;
+            padding: 2%;
+            border-radius: 2%;
+            label {
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                padding-top: 5%; 
+                padding-bottom: 3%; 
+            }
+            input, #user-text {
+                padding: 2%;
+                border: 0;
+                border-radius: 4%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 13px;
+            }
+            button {
+                flex: auto;
+                border: none;
+                flex: 1;
+                cursor:pointer;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                padding: 2% 0 2%;
+                margin-top: 2vh;
+            }
+            #submit-btn {
+                background-color: $color-15;
+                border-radius: 0 0 0 8%;
+                &:hover {
+                    background-color: $color-7;
+                    color: $color-9;
+                }
+            }
+            #reset-btn {
+                background-color: $color-14;
+                border-radius: 0 0 8% 0;
+                &:hover {
+                    background-color: $color-16;
+                    color: $color-9;
+                }
+            }
+            button:last-of-type {
+                border-left: 2px solid $color-9;
+            }
+            #form-btn-container {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    #subtitle-and-map-container {
+        padding-left: 4vw;
+        .contact-sub-title {
+            color: $color-10;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: $color-10;
+            font-size: 14px;
+        }
+        #contact-map {
+            width: 35vw;
+            height: auto;
+            border: 10px solid $color-12;
+            border-radius: 2%;
+            &:hover {
+                opacity: 0.6;
+                transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+                -o-transform: scale(0.95);
+                -moz-transform: scale(0.95);
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 769px) {
+    #contact {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+        #subtitle-and-form-container {
+            form {
+            width: 85vw;
+            }
+        }
+        #subtitle-and-map-container {
+            margin-top: 6vh;
+            margin-bottom: 6vh;
+            width: 90%;         
+            #contact-map {
+                text-align: center;
+                width: 90vw;
+            }
+        }
+    }
 }

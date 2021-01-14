@@ -17,6 +17,8 @@
         @extend %font-section-text;
         margin-top: 25vh;
         margin-left: 5vw;
+        -webkit-box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0); 
+        box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0);
         .section-title {
             @extend %font-section-title;
             padding-bottom: 3vh;
@@ -43,7 +45,7 @@
         #about-text {
             text-align: center;
             margin-top: 3vh;
-            margin-left: 4vw;
+            margin-left: 3vw;
             width: 90vw;
             .section-title {
                 text-align: center;  

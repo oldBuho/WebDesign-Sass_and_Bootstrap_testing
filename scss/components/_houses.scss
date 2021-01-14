@@ -8,6 +8,8 @@
     justify-content: center;
     #houses-text {
         background-color: $color-12;
+        -webkit-box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0); 
+        box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0);
         width: 40vw;
         padding: 6vh;
         border-radius: 2%;
@@ -40,7 +42,7 @@
             margin-top: 5vh;
             margin-left: 4vh;
             width: 90vw;
-            padding: 3vh 1vh 3vh 1vh;
+            padding: 3vh 1.5vh 3vh 1.5vh;
             .section-title {
                 text-align: center;  
                 margin-top: 1vh;      
@@ -60,7 +62,7 @@
         height: auto;
         margin-bottom: 1vh;
         #houses-text {
-            margin-left: 4.5vw;
+            margin-left: 4vw;
         }
         #houses-carousel {
             margin-left: 6vw;
