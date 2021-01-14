@@ -33,29 +33,3 @@
         }
     }
 }
-
-@media screen and (max-width: 769px) {
-    #nature {
-        height: auto;
-        padding-top: 10vh;
-        padding-bottom: 2vh;         
-        #nature-video {
-            width: 90vw;
-            border-left: 0;
-            margin-left: 2.5vw;
-            margin-top: 0;
-        }
-        #nature-text {
-            width: 90vw;
-            height: auto;
-            margin-top: 3vh;
-            margin-left: 5vw;
-            padding: 4.5%;
-            text-align: center;
-            .section-title {
-                padding-top: 1vh;
-                padding-bottom: 1.5vh;
-            }
-        }
-    }
-}

@@ -1,5 +1,12 @@
 #houses {
-    background-color: $color-14;
+    //background-color: $color-14;
+    background-image: url(../images/background-houses.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: auto;
     padding-top: 15vh;
@@ -27,45 +34,6 @@
         border-radius: 2%;
         #carousel-indicators-bg {
             background-color: rgba($color: $color-14, $alpha: 0.8);
-        }
-    }
-}
-
-
-@media screen and (max-width: 769px) {
-    #houses {
-        height: auto;
-        padding-top: 5vh;
-        padding-bottom: 2vh;
-        #houses-text {
-            text-align: center;
-            margin-top: 5vh;
-            margin-left: 4vh;
-            width: 90vw;
-            padding: 3vh 1.5vh 3vh 1.5vh;
-            .section-title {
-                text-align: center;  
-                margin-top: 1vh;      
-            }
-        }  
-        #houses-carousel {
-            width: 80vw;
-            margin: 2vh 0vw 0 8vw;
-            border-right: 0;
-            border-bottom: 10px solid $color-12;
-        }
-    } 
-}
-
-@media screen and (max-width: 425px) {
-    #houses {
-        height: auto;
-        margin-bottom: 1vh;
-        #houses-text {
-            margin-left: 4vw;
-        }
-        #houses-carousel {
-            margin-left: 6vw;
         }
     }
 }

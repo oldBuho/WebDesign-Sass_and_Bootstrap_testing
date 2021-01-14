@@ -21,29 +21,3 @@
     }
 }
 
-@media screen and (min-width: 769px) {
-    #navbar-container {
-        height: 10vh;
-        #navbar-icon{
-            margin-right: 2vw;
-            margin-left: 1vw;
-        }          
-        #anchor-navbar {
-            margin-left: 5%;
-            &:hover {
-                border-bottom: 1px solid $color-9;
-                border-top: 1px solid $color-9;
-            }    
-        }     
-    }
-}
-
-@media screen and (max-width: 769px) {   
-    #anchor-navbar:hover {
-            border-left: 1px solid $color-9;
-    }    
-}
-
-
-
-

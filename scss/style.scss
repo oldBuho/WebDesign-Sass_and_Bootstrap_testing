@@ -5,8 +5,6 @@
 
 @import "base/colors";
 @import "base/text-style";
-@import "extensions/extend";
-@import "extensions/mixins";
 @import "components/navbar";
 @import "components/header";
 @import "components/about";
@@ -15,6 +13,7 @@
 @import "components/sports";
 @import "components/contact";
 @import "components/footer";
+@import "extensions/mQuery";
 
 body {
     background-color: $color-11;

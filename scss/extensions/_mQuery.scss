@@ -1,0 +1,191 @@
+@import "../components/navbar";
+@import "../components/header";
+@import "../components/about";
+@import "../components/houses";
+@import "../components/nature";
+@import "../components/sports";
+@import "../components/contact";
+
+
+// NAVBAR
+
+@media screen and (min-width: 769px) {
+    #navbar-container {
+        height: 10vh;
+        #navbar-icon{
+            margin-right: 2vw;
+            margin-left: 1vw;
+        }          
+        #anchor-navbar {
+            margin-left: 5%;
+            &:hover {
+                border-bottom: 1px solid $color-9;
+                border-top: 1px solid $color-9;
+            }    
+        }     
+    }
+}
+
+@media screen and (max-width: 769px) {   
+    #anchor-navbar:hover {
+            border-left: 1px solid $color-9;
+    }    
+}
+
+// HEADER
+
+@media screen and (max-width: 769px) {
+    #header-h1 {
+        margin-top: 33%;    
+    }
+}
+
+// #ABOUT
+
+@media screen and (max-width: 769px) {
+    #about {
+        height: auto;
+        margin-bottom: 2vh;
+        #about-text {
+            text-align: center;
+            margin-top: 3vh;
+            margin-left: 3vw;
+            width: 90vw;
+            .section-title {
+                text-align: center;  
+                margin-top: 1vh;      
+            }
+        }
+        #about-img-contaner {
+            width: 85vw;
+            margin-left: 2vw;       
+            #about-img {
+                border-left: 0;
+                margin-top: 10vh;
+            }
+        }
+    }
+}
+
+// #HOUSES
+
+
+@media screen and (max-width: 769px) {
+    #houses {
+        height: auto;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        #houses-text {
+            text-align: center;
+            margin-top: 5vh;
+            margin-left: 4vh;
+            width: 90vw;
+            padding: 3vh 1.5vh 3vh 1.5vh;
+            .section-title {
+                text-align: center;  
+                margin-top: 1vh;      
+            }
+        }  
+        #houses-carousel {
+            width: 80vw;
+            margin: 2vh 0vw 0 8vw;
+            border-right: 0;
+            border-bottom: 10px solid $color-12;
+        }
+    } 
+}
+
+@media screen and (max-width: 425px) {
+    #houses {
+        height: auto;
+        margin-bottom: 1vh;
+        #houses-text {
+            margin-left: 4vw;
+        }
+        #houses-carousel {
+            margin-left: 6vw;
+        }
+    }
+}
+
+// #SPORTS
+
+@media screen and (max-width: 769px) {
+    #sports {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+        #sports-img {
+            width: 85vw;
+            border-left: 0;
+            margin-left: -5%;
+        }
+        #sports-text{
+            width: 90vw;
+            height: auto;
+            margin-left: 4vw;
+            padding: 4.5%;
+            .section-title {
+                padding-top: 1vh;
+            }
+        }
+    }
+}
+
+// #NATURE
+
+@media screen and (max-width: 769px) {
+    #nature {
+        height: auto;
+        padding-top: 13vh;
+        padding-bottom: 10vh;         
+        #nature-video {
+            width: 90vw;
+            border-left: 0;
+            margin-left: 2.5vw;
+            margin-top: 0;
+        }
+        #nature-text {
+            width: 90vw;
+            height: auto;
+            margin-top: 3vh;
+            margin-left: 5vw;
+            padding: 4.5%;
+            text-align: center;
+            .section-title {
+                padding-top: 1vh;
+                padding-bottom: 1.5vh;
+            }
+        }
+    }
+}
+
+// #CONTACT
+
+@media screen and (max-width: 769px) {
+    #contact {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+        #subtitle-and-form-container {
+            form {
+            width: 85vw;
+            }
+        }
+        #subtitle-and-map-container {
+            margin-top: 6vh;
+            margin-bottom: 6vh;
+            width: 90%;         
+            #contact-map {
+                text-align: center;
+                width: 90vw;
+            }
+        }
+    }
+}
+
+
+
+
+
+

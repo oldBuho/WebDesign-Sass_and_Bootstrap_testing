@@ -102,27 +102,3 @@
         }
     }
 }
-
-
-
-@media screen and (max-width: 769px) {
-    #contact {
-        height: auto;
-        padding-top: 10vh;
-        padding-bottom: 2vh;
-        #subtitle-and-form-container {
-            form {
-            width: 85vw;
-            }
-        }
-        #subtitle-and-map-container {
-            margin-top: 6vh;
-            margin-bottom: 6vh;
-            width: 90%;         
-            #contact-map {
-                text-align: center;
-                width: 90vw;
-            }
-        }
-    }
-}

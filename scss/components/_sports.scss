@@ -22,28 +22,4 @@
             padding-bottom: 3vh;
         }
     }
-
-}
-
-
-@media screen and (max-width: 769px) {
-    #sports {
-        height: auto;
-        padding-top: 10vh;
-        padding-bottom: 2vh;
-        #sports-img {
-            width: 85vw;
-            border-left: 0;
-            margin-left: -5%;
-        }
-        #sports-text{
-            width: 90vw;
-            height: auto;
-            margin-left: 4vw;
-            padding: 4.5%;
-            .section-title {
-                padding-top: 1vh;
-            }
-        }
-    }
 }

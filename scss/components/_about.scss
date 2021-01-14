@@ -36,30 +36,3 @@
         }
     }
 }
-
-
-@media screen and (max-width: 769px) {
-    #about {
-        height: auto;
-        margin-bottom: 2vh;
-        #about-text {
-            text-align: center;
-            margin-top: 3vh;
-            margin-left: 3vw;
-            width: 90vw;
-            .section-title {
-                text-align: center;  
-                margin-top: 1vh;      
-            }
-        }
-        #about-img-contaner {
-            width: 85vw;
-            margin-left: 2vw;       
-            #about-img {
-                border-left: 0;
-                margin-top: 10vh;
-            }
-        }
-    }
-}
-
