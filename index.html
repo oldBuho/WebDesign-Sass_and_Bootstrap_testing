@@ -23,10 +23,10 @@
       content="Complejo habitacional de alto nivel y en contacto con la naturaleza"
     />
     <meta property="og:url" content="https://oldbuho.github.io/webdev-coderhouse/"/>
-    <meta property="og:image" content="images/happy-family.png"/>
+    <meta property="og:image" content="images/company-icon.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:hight" content="627"/>
-    <meta property="og:image:alt" content="familia feliz en paisaje de campo"/>
+    <meta property="og:image:alt" content="Familia feliz en paisaje de campo"/>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
@@ -68,11 +68,13 @@
       id="navbar-container"
     >
       <div class="container-fluid">
-        <img
-          src="images/company-icon.png"
-          alt="ícono de la empresa"
-          id="navbar-icon"
-        />
+        <a href="index.html">
+          <img
+            src="images/company-icon.png"
+            alt="Logo de la empresa"
+            id="navbar-icon"
+          />
+        </a>  
         <button
           class="navbar-toggler"
           type="button"
@@ -108,6 +110,11 @@
             <li class="nav-item">
               <a class="nav-link" id="anchor-navbar" href="#contact"
                 >CONTACTO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="anchor-navbar" href="index.html"
+                >INICIO</a
               >
             </li>
           </ul>
@@ -228,7 +235,7 @@
     <section id="sports" class="container-fluid">
       <div class="row">
         <div class="col-md-12 module" id="sports-img-contaner">
-          <img src="images/sports.png" alt="Panorámica del campo de deportes" id="sports-img">
+          <img src="images/sports.png" alt="Foto panorámica del campo de deportes" id="sports-img">
         </div>  
         <div class="col-md-12 module" id="sports-text">
           <h2 class="section-title">Deporte</h2>
@@ -293,7 +300,7 @@
           </div>
           <div class="col-md-6 module" id="subtitle-and-map-container">
             <h3 class="contact-sub-title">Ubicación:</h3>
-            <p>Hacer click en el mapa para abrirlo en Google Maps.</p>
+            <p>Hacé click en el mapa para abrirlo en Google Maps.</p>
             <a target="_blank" href="https://www.google.com/maps/place/Canning,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcd6fa531dee35:0x2effecb5cd307cad?sa=X&ved=2ahUKEwiZq_OB5ZvuAhUNGrkGHUHTDN4Q8gEwAHoECAYQAQ">
               <img id="contact-map" src="images/journey-map.png" alt="Mapa de ubicación del complejo">
             </a>
@@ -308,12 +315,12 @@
       <h4>
         by F.J.  °.°    
         <a href="https://www.linkedin.com/in/federicojuiz/" target="_blank">
-          <img src="images/linkedin-icon.png" alt="Linked In">
+          <img src="images/linkedin-icon.png" alt="Logo de Linked In">
         </a>
       </h4>
     </footer> 
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- Bootstrap JS - Option 2 -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
       integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
@@ -324,8 +331,7 @@
       integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
       crossorigin="anonymous"
     ></script> 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS
-          carousel functionality -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS carousel functionality -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

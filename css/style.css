@@ -2,18 +2,6 @@
   margin: 0;
   padding: 0; }
 
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards; }
-
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s;
-  /* So they look staggered */ }
-
-@keyframes come-in {
-  to {
-    transform: translateY(0); } }
-
 #about #about-text .section-title, #houses #houses-text .section-title, #nature #nature-text .section-title, #sports #sports-text .section-title, #contact #contact-text .section-title {
   color: black;
   font-size: 21px;
@@ -24,6 +12,20 @@
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards; }
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
+
+body {
+  background-color: #F5F5F5; }
 
 #navbar-container {
   background: linear-gradient(320deg, #cdcdcd 0%, black 37%);
@@ -678,6 +680,3 @@
       #contact #subtitle-and-map-container #contact-map {
         text-align: center;
         width: 90vw; } }
-
-body {
-  background-color: #F5F5F5; }
