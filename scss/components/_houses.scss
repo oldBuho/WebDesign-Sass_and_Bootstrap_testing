@@ -1,5 +1,4 @@
 #houses {
-    //background-color: $color-14;
     background-image: url(../images/background-houses.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -7,6 +6,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: auto;
     padding-top: 15vh;
@@ -14,9 +14,7 @@
     align-items: center;
     justify-content: center;
     #houses-text {
-        background-color: $color-12;
-        -webkit-box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0); 
-        box-shadow: inset 4px 4px 15px 0px $color-17, -50px 40px 0px 31px rgba(0,0,0,0);
+        background-color: rgba($color: $color-9, $alpha: 0.75);
         width: 40vw;
         padding: 6vh;
         border-radius: 2%;
@@ -28,7 +26,6 @@
         }
     }
     #houses-carousel {
-        border-right: 10px solid $color-12;
         height: auto;
         width: 45vw;
         border-radius: 2%;
