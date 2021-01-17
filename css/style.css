@@ -13,9 +13,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
-#about #about-img, #about #about-text, #sports #sports-img, #sports #sports-text {
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
-
 .come-in {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards; }
@@ -26,6 +23,12 @@
 @keyframes come-in {
   to {
     transform: translateY(0); } }
+
+#about #about-img, #about #about-text, #sports #sports-img, #sports #sports-text {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
 body {
   background-color: #F5F5F5; }
@@ -163,6 +166,8 @@ body {
     margin-left: 5vw;
     width: 40vw;
     height: auto; }
+    #nature #nature-video:focus {
+      outline: none; }
   #nature #nature-text {
     background-color: rgba(255, 255, 255, 0.75);
     width: 40vw;
@@ -221,9 +226,14 @@ body {
       #contact #subtitle-and-form-container form input, #contact #subtitle-and-form-container form #user-text {
         padding: 2%;
         border: 0;
-        border-radius: 4%;
+        border-radius: 2%;
         font-family: 'Roboto', sans-serif;
-        font-size: 13px; }
+        font-size: 13px;
+        background-color: #F5F5F5; }
+        #contact #subtitle-and-form-container form input:focus, #contact #subtitle-and-form-container form #user-text:focus {
+          outline: none;
+          border: 2px solid #a4c3b2;
+          background-color: white; }
       #contact #subtitle-and-form-container form button {
         flex: auto;
         border: none;
@@ -429,6 +439,8 @@ body {
     margin-left: 5vw;
     width: 40vw;
     height: auto; }
+    #nature #nature-video:focus {
+      outline: none; }
   #nature #nature-text {
     background-color: rgba(255, 255, 255, 0.75);
     width: 40vw;
@@ -487,9 +499,14 @@ body {
       #contact #subtitle-and-form-container form input, #contact #subtitle-and-form-container form #user-text {
         padding: 2%;
         border: 0;
-        border-radius: 4%;
+        border-radius: 2%;
         font-family: 'Roboto', sans-serif;
-        font-size: 13px; }
+        font-size: 13px;
+        background-color: #F5F5F5; }
+        #contact #subtitle-and-form-container form input:focus, #contact #subtitle-and-form-container form #user-text:focus {
+          outline: none;
+          border: 2px solid #a4c3b2;
+          background-color: white; }
       #contact #subtitle-and-form-container form button {
         flex: auto;
         border: none;
@@ -562,11 +579,11 @@ body {
 @media screen and (max-width: 769px) {
   #about {
     height: auto;
-    margin-bottom: 2vh; }
+    margin-bottom: 8vh; }
     #about #about-text {
       text-align: center;
       margin-top: 3vh;
-      margin-left: 3vw;
+      margin-left: 5vw;
       width: 90vw; }
       #about #about-text .section-title {
         text-align: center;
@@ -582,7 +599,7 @@ body {
   #houses {
     height: auto;
     padding-top: 5vh;
-    padding-bottom: 2vh; }
+    padding-bottom: 10vh; }
     #houses #houses-text {
       text-align: center;
       margin-top: 5vh;
@@ -609,7 +626,8 @@ body {
   #sports {
     height: auto;
     padding-top: 10vh;
-    padding-bottom: 2vh; }
+    padding-bottom: 2vh;
+    margin-bottom: 15vh; }
     #sports #sports-img {
       width: 85vw;
       border-left: 0;
@@ -622,6 +640,10 @@ body {
       #sports #sports-text .section-title {
         padding-top: 1vh; } }
 
+@media screen and (min-width: 1024px) {
+  #sports {
+    margin-bottom: 25vh; } }
+
 @media screen and (max-width: 769px) {
   #nature {
     height: auto;
@@ -630,7 +652,7 @@ body {
     #nature #nature-video {
       width: 90vw;
       border-left: 0;
-      margin-left: 2.5vw;
+      margin-left: 2vw;
       margin-top: 0; }
     #nature #nature-text {
       width: 90vw;
@@ -648,8 +670,10 @@ body {
     height: auto;
     padding-top: 10vh;
     padding-bottom: 2vh; }
-    #contact #subtitle-and-form-container form {
-      width: 85vw; }
+    #contact #subtitle-and-form-container {
+      margin-left: 3vw; }
+      #contact #subtitle-and-form-container form {
+        width: 85vw; }
     #contact #subtitle-and-map-container {
       margin-top: 6vh;
       margin-bottom: 6vh;

@@ -47,11 +47,11 @@
 @media screen and (max-width: 769px) {
     #about {
         height: auto;
-        margin-bottom: 2vh;
+        margin-bottom: 8vh;
         #about-text {
             text-align: center;
             margin-top: 3vh;
-            margin-left: 3vw;
+            margin-left: 5vw;
             width: 90vw;
             .section-title {
                 text-align: center;  
@@ -71,12 +71,11 @@
 
 // #HOUSES
 
-
 @media screen and (max-width: 769px) {
     #houses {
         height: auto;
         padding-top: 5vh;
-        padding-bottom: 2vh;
+        padding-bottom: 10vh;
         #houses-text {
             text-align: center;
             margin-top: 5vh;
@@ -115,6 +114,7 @@
         height: auto;
         padding-top: 10vh;
         padding-bottom: 2vh;
+        margin-bottom: 15vh;
         #sports-img {
             width: 85vw;
             border-left: 0;
@@ -132,6 +132,12 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    #sports {
+        margin-bottom: 25vh;
+    }  
+}
+
 // #NATURE
 
 @media screen and (max-width: 769px) {
@@ -142,7 +148,7 @@
         #nature-video {
             width: 90vw;
             border-left: 0;
-            margin-left: 2.5vw;
+            margin-left: 2vw;
             margin-top: 0;
         }
         #nature-text {
@@ -168,6 +174,7 @@
         padding-top: 10vh;
         padding-bottom: 2vh;
         #subtitle-and-form-container {
+            margin-left: 3vw;
             form {
             width: 85vw;
             }

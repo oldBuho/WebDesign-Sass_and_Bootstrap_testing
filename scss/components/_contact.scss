@@ -35,9 +35,15 @@
             input, #user-text {
                 padding: 2%;
                 border: 0;
-                border-radius: 4%;
+                border-radius: 2%;
                 font-family: 'Roboto', sans-serif;
                 font-size: 13px;
+                background-color: $color-11;
+                &:focus {
+                    outline: none;
+                    border: 2px solid $color-15;
+                    background-color: $color-9;
+                }
             }
             button {
                 flex: auto;

@@ -15,6 +15,9 @@
         margin-left: 5vw;
         width: 40vw;
         height: auto;
+        &:focus {
+            outline: none;
+        }
         } 
     #nature-text {
         background-color: rgba($color: $color-9, $alpha: 0.75);
