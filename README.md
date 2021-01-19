@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Federico Juiz</h1>
 <h3 align="center">This is a small website developed as a final project of a course.</h3>
 
-- You can also see this project in this link: [https://www.000webhost.com/members/website/list](https://www.000webhost.com/members/website/list)
+- You can also see this project in this link: [https://laarboledabis.000webhostapp.com/](https://laarboledabis.000webhostapp.com/)
 
 - 🌱 I’m currently learning **Sass, Bootstrap, Git, SEO, Server**
 
