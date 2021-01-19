@@ -54,6 +54,9 @@
                 font-weight: 500;
                 padding: 2% 0 2%;
                 margin-top: 2vh;
+                &:focus {
+                    outline: none;
+                }
             }
             #submit-btn {
                 background-color: $color-15;
