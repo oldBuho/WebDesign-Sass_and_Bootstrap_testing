@@ -1,7 +1,7 @@
 
 - [https://laarboledabis.000webhostapp.com/](https://laarboledabis.000webhostapp.com/)
 
-- 🌱 Contents: **GIT, Sass, Bootstrap, SEO**
+- 🌱 Course Contents: **GIT, Sass, Bootstrap, SEO**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
