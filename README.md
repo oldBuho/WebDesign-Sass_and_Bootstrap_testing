@@ -1,9 +1,9 @@
-<h1 align="center">Hi 👋, I'm Federico Juiz</h1>
-<h3 align="center">This is a small website developed as a final project of a course.</h3>
 
-- You can also see this project in this link: [https://laarboledabis.000webhostapp.com/](https://laarboledabis.000webhostapp.com/)
+<h3 align="center">This is a small website developed as a project of a course.</h3>
 
-- 🌱 I’m currently learning **Sass, Bootstrap, Git, SEO, Server**
+- [https://laarboledabis.000webhostapp.com/](https://laarboledabis.000webhostapp.com/)
+
+- 🌱 Contents: **GIT, Sass, Bootstrap, SEO**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
