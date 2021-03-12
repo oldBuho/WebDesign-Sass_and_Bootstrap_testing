@@ -1,6 +1,4 @@
 
-<h3 align="center">This is a small website developed as a project of a course.</h3>
-
 - [https://laarboledabis.000webhostapp.com/](https://laarboledabis.000webhostapp.com/)
 
 - 🌱 Contents: **GIT, Sass, Bootstrap, SEO**
